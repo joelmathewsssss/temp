@@ -1,0 +1,18 @@
+#!/bin/bash
+# Enter the directory
+cd /home/immiuser/my_translator
+
+# Activate the virtual environment
+source env/bin/activate
+
+# Set the hardware driver for the button
+export GPIOZERO_PIN_FACTORY=lgpio
+
+# Set your ElevenLabs credentials
+export ELEVENLABS_API_KEY="d82e637948b13bc23046cde34ec176088379b2f9661beb93fdb4>
+export ELEVENLABS_AGENT_ID="agent_9501kenec0e5f9t8jp5rw9wq4ks4"
+
+# Run the script
+python translator.py
+
+
